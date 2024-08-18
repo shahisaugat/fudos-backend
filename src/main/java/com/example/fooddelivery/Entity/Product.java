@@ -17,6 +17,7 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long productId;
     private String productName;
+    @Column(length = 2000)
     private String detail;
     private Long price;
     @OneToOne(cascade = CascadeType.ALL)

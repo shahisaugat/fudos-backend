@@ -18,7 +18,7 @@ public class StorageService {
     @Autowired
 
     private FileDataRepository fileDataRepository;
-    public final String FOLDER_PATH="C:/Users/shahi/Downloads/fudos-backend/FoodDelivery/src/main/java/com/example/fooddelivery/images/";
+    public final String FOLDER_PATH="C:/Users/shahi/Downloads/fudos-backend/src/main/java/com/example/fooddelivery/images/";
 
     public String uploadImageToFileSystem(MultipartFile file) throws IOException {
         String filePath = FOLDER_PATH + file.getOriginalFilename();
